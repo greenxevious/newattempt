@@ -1,0 +1,35 @@
+<style>
+
+   body.body {
+position: relative;
+     right: -700px;
+     padding:10px;
+     width:50%;
+   }
+   H1 {
+     font-family: Comic Sans MS;
+background-color: black;  
+     color: white;
+     text-align:center;
+     width:50%; 
+}
+section.image {
+position: absolute;
+right: 490px;
+height: 100px;
+}
+   h3.title {
+     text-decoration: underline;
+     
+   }
+   div.copyright,section.update {
+     background-color: black ; 
+     color: yellow;
+text-align:center;
+       width:50%; 
+     font-family: Comic Sans MS;
+
+
+   }
+   
+    </style>
