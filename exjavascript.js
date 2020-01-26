@@ -1,6 +1,9 @@
-<script>
-    document.write("Last Updated On: " + document.lastModified);
 
+ 
+<script type="text/JavaScript">
 
+document.write(new Date().getFullYear());
 
 </script>
+   
+
