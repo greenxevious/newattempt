@@ -1,5 +1,5 @@
 main {
-    max-width: 500px;
+    max-width: 800px;
     display: grid;
     margin: 1px;
     grid-template-columns: 1fr;
@@ -31,7 +31,7 @@ text-align: center;
 
 @media(min-width: 60em) {
 	main {
-		grid-template-columns: 4fr 4fr 4fr;
+		grid-template-columns: 1fr;
 	}
 
 	section:nth-child(3) {
