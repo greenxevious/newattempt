@@ -1,0 +1,31 @@
+@media screen and (min-width: 800px)
+{
+
+/*400   */
+main article img.small {
+    display: none;
+    max-width: 100%;
+      padding-top: 10px;
+    padding-bottom: 10px;
+    
+      }
+
+      /*     700  */
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: yellow;
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+ 
+}

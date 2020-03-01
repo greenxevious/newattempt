@@ -1,0 +1,31 @@
+
+@media screen and (min-width: 450px) {
+  /*400   */
+
+.navigation {
+  display: flex;
+}
+.navigation li {
+  display: block; /* needed because of state in small view */
+  flex: 1 1 100%;
+}
+.navigation li a {
+  color: yellow;
+  text-align: center;
+}
+
+.navigation li:first-child {
+  display: none;
+}
+  article.inner{
+      grid-template-columns: auto auto;
+      display: grid;
+          font-size: 15px;
+          width: 150px;
+          float:left;
+          top: -150px;
+          right: -30px;
+          position: relative;    
+        }
+
+      }
