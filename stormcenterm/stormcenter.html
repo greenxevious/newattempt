@@ -67,11 +67,11 @@
 			<br>
 			<label for ="Stormtype">Storm Type: </label>
 			<select id="list" name="Stormtype">
-				<option value="FlashFlood">Flash Flood</option>
-				<option value="FlashFlood">Hail</option>
-				<option value="FlashFlood">Hurricane</option>
-				<option value="FlashFlood">Thunderstorm</option>
-				<option value="FlashFlood">Tornado</option>
+				<option>Flash Flood</option>
+				<option>Hail</option>
+				<option>Hurricane</option>
+				<option>Thunderstorm</option>
+				<option>Tornado</option>
 			</select>
 			<br>  
 		  </form>
@@ -82,7 +82,7 @@
 		<fieldset>
 
 		<label for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;</label>
-	<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+	<input type="datalist" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 			<span id="ratingvalue">5</span>
 		</fieldset>
 
@@ -106,8 +106,8 @@
 	<fieldset>
 	<form>
 		<br>
-		<label for = " Stormregion">Storm Region: </label>
-		<select id= " Stormregion" name= " Stormregion">
+		<label for = "region"> Storm Region: </label>
+		<select id= "region" name= "region">
 			<option selected= "true" value= "Stormregion" disabled>Select Region</option>
 			<option> Preston</option>
 			<option> Soda Springs</option>
@@ -128,9 +128,8 @@
 	<label for="Maybe">Maybe</label><br>
 	<input type="radio" id="No" name="confirm" value="No">
 	<label for="No">No</label><br>
-
-</fieldset>
 </form>
+</fieldset>
 <br>
 
 <label for="textarea">Additional Information or Comments</label><br>
