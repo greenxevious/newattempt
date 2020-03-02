@@ -77,14 +77,14 @@
 		  </form>
 	  </fieldset>
 	  
-		<script  src="stormcenter.js"></script>
 		<br>
 		<fieldset>
+			<script type="text/javascript" src="stormcenter.js"></script>
 
-		<label for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;</label>
-	<input type="datalist" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-			<span id="ratingvalue">5</span>
-		</fieldset>
+			<label for="rating">Storm Severity:</label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				<span id="ratingvalue">5</span>
+			</fieldset>
 
 		<datalist>
 <option value="0">
@@ -137,9 +137,9 @@
 
 
 
+<br><br>
+<input type="button" onclick="thanks.html" value="Submit">
 <br>
-<input type="button" onclick="thanks.html" value="Redirect">
-
 <br>
 </main>
 <footer>
