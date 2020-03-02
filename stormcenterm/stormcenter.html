@@ -44,7 +44,7 @@
 	  <form>
 		<br>
 		<label for= "email" >Email</label><br>  
-		<input type="email" id="email"placeholder= "user@email.org">
+		<input type="email" id="email" placeholder= "user@email.org">
 	  </form>	
 
 	  <form>
@@ -75,16 +75,17 @@
 			</select>
 			<br>  
 		  </form>
-
-		<script type="text/javascript" src="stormcenter.js"></script>
+	  </fieldset>
+	  
+		<script  src="stormcenter.js"></script>
 		<br>
 		<fieldset>
 
-		<label for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+		<label for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;</label>
 	<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 			<span id="ratingvalue">5</span>
 		</fieldset>
-</form>
+
 		<datalist>
 <option value="0">
 <option value="1">
