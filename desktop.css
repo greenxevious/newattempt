@@ -11,26 +11,7 @@ main article img.small {
       }
 
       /*     700  */
-main article img.med {
-display: none;
-max-width: 100%;
-padding-top: 10px;
-padding-bottom: 10px;
 
-}
-
-      /*    1000px   */
-main article img.large {
-display: block;
-max-width: 100%;
-padding-top: 10px;
-padding-bottom: 10px;
-
-
-    }
-    article.inner{
-        display: grid;    
-          }
 	.navigation {
 		display: flex;
 	}
@@ -46,13 +27,5 @@ padding-bottom: 10px;
 	.navigation li:first-child {
 		display: none;
 	}
-  article.inner{
-    font-size:13px;
-    
-  }
-  article.forecast {
-    display: none;
-   
-    
-  }
+ 
 }
