@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px)
+{
+
+  main > div{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+}
