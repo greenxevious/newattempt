@@ -1,0 +1,31 @@
+
+@media screen and (max-width: 820px) and (min-width: 446px) 
+{
+	div {
+    display: grid;
+    margin: 1px;
+    grid-template-columns: 1fr 1fr;
+	}
+
+	section.img {
+		width: 100%;
+		height: auto;
+  }
+  .navigation {
+		display: flex;
+		width: 100%;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: yellow;
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+
+}

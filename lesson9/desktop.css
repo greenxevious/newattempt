@@ -1,0 +1,30 @@
+@media (min-width: 800px)
+{
+div {
+    display: grid;
+	margin: 1px;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+/*     700  */
+
+	.navigation {
+		display: flex;
+		width: 100%;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: yellow;
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+ 
+}
