@@ -57,7 +57,6 @@ nav {
     </nav>
 */
 .topnav {
-    max-width: auto;
     overflow: hidden;
     background-color: blue;
     margin: 0;
