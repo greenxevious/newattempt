@@ -15,11 +15,11 @@ if (i == '1'|| i == '4'|| i == '5')
       let card = document.createElement('section');
 
            let h2 = document.createElement('h2');
-           h2.textContent = towns[i].name;
+           h2.textContent = 'Town Name: ' +  towns[i].name;
            card.appendChild(h2);
 
            let h3 = document.createElement('h3');
-           h3.textContent = towns[i].motto;
+           h3.textContent = 'The towns motto: '+ towns[i].motto;
            card.appendChild(h3);
 
 
