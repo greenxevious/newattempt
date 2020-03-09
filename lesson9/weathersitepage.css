@@ -10,7 +10,11 @@ border: 1.5px solid black;
 background-color: cadetblue;
 text-align: center;
 }
-
+b {
+    font-size: 22px;
+      letter-spacing: 8px;
+  
+  }
 /*
 nav {
 	max-width: auto;
