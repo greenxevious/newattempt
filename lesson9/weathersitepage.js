@@ -10,7 +10,7 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
 
-if (i == '1'|| i == '4'|| i == '5')
+if (i == '0'|| i == '2'|| i == '5')
 {
       let card = document.createElement('section');
 

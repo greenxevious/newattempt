@@ -15,51 +15,8 @@ b {
       letter-spacing: 8px;
   
   }
-/*
-nav {
-	max-width: auto;
-	background-color: blue;
-}
-.navigation {
-	margin: 0 ;
-	list-style: none;
-	padding: 0;
-	background-color: blue;
-	text-align: center;
-	box-shadow: 0 5px 15px #00BFFF;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	color: #fff;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-}
-.navigation a:hover {
-	color: #000;
-	background-color: #fff;
-	
-}
 
-<nav>
-    <ul class="navigation">
-      <li><a class="ham" href="#">&#9776; Menu</a></li>
-     <li><a href="#"> Home</a></li>
-            <li><a href="weatherpage.html">Weather Page</a></li>
-            <li><a href="Preston.html">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="FishHaven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-    </nav>
-*/
+
 .topnav {
     overflow: hidden;
     background-color: blue;
