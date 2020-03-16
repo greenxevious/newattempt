@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" type="text/javascript" href="lazyload.js">
 <link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/javascript" href="weathersitepage.js">
+<link rel="stylesheet" type="text/javascript" href="prestonweatherpage.js">
 <link rel="stylesheet" type="text/css" href="allsight.css">
 <link rel="stylesheet" type="text/css" href="small.css">
 <link rel="stylesheet" type="text/css" href="large.css">
@@ -40,25 +40,22 @@
         <main>
           <article>
       
-      <img class="small" src="preston300.jpg"alt="youweatherpreston">    
-      
-      <img class="med" src="preston600.jpg" alt="youweatherpreston">  
-      
-      <img class="large" src="preston900.jpg" alt="youweatherpreston">    
+ 
       
         </article>
+<script src="prestonweatherpage.js"></script>
         <article class="inner">
          <h4>Weather summary</h4> 
          <div class ="column5left"> Currently:</div>
-         <div class ="column5right">Sunny</div>
+         <div class ="column5right"><span id="curtemp"></span> F</div>
          <div class ="column1left"> Temperature:</div>
-         <div class ="column1right"><span id="temp">55</span>F </div>
-         <div class ="column2left"> Wind Chill:<script src="document.getElementId("chill")></script> </script></div>
-         <div class ="column2right"></div>
+         <div class ="column1right"><span id="tempe"></span> F</div>
+         <div class ="column2left"> Wind Chill:</div>
+         <div class ="column2right"><span id="windChill"></span> F</div>
          <div class ="column3left"> Humidity: </div>
-          <div class ="column3right">67% </div>
+          <div class ="column3right"><span id="humid"></span>%</div>
           <div class ="column4left">Wind Speed: </div>
-          <div class ="column4right"><span id= "windsp">10</span>MPH </div>
+          <div class ="column4right"><span id= "windSpeed">MPH</span></div>
       
       
         
@@ -66,32 +63,46 @@
         
         
           </article> 
+
           <br>
-          <div class="Forcasttitle">5 Day Forecast</div>
+         
           <article class = "forcastholder">
+            <script src="weekweather.js"></script>
+
+            <div class="Forcasttitle">5 Day Forecast</div>
+
               <div>SAT<br><br>
-                  55F<br><br>
-                  <img src="sunnyday.jpg"alt="weatherhappy">    
+                <img id="days1">
+               <br>
+
+                 <span id= "day1"></span>F<br><br>
               </div>
       
                  <div>SUN<br><br>
-                  60F<br><br>
-                  <img src="sunnyday.jpg"alt="weatherhappy">    
+                  <img id="days3">
+                  <br>
+
+                  <span id= "day2"></span>F<br><br>
                  </div>
       
               <div>Mon<br><br>
-                  35F<br><br>
-                  <img src="snow.jpg"alt="weatherhappy">    
+                <img id="days3">
+                <br>
+                <span id= "day3"></span>F<br><br>
       
                 </div> 
                 <div> TUE<br><br>
-                  55F<br><br>
-                  <img src="storm.jpg"alt="weatherhappy">    
+                  <img id="days4">
+                  <br>
+
+                  <span id= "day4"></span>F<br><br>
       
                 </div>
                  <div >WED<br><br>
-                  35F<br><br>
-                  <img src="snow.jpg"alt="weatherhappy">    
+                  <img id="days5">
+                  <br>
+
+                  <span id= "day5"></span>F<br><br>
       
                  </div>
                  
@@ -110,6 +121,7 @@
       <p>(208)845-4535</p>
       <p>Youweather.org/Preston</p>
           </article>
+          </main>
 <footer>
     &copy; 2020 | Author: Xevious E. Green |  Cell# 801-502-4589 |<a href="">Terms </a>
 </footer>
