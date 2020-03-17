@@ -1,6 +1,18 @@
 
 @media only screen and (max-width: 445px) {
 
+	img.small {
+		display: block;
+			}
+		
+			img.med {
+		display: none;
+			}
+		
+			img.large {
+		display: none;
+			}
+		
 	div {
     display: grid;
     grid-template-columns: 1fr;

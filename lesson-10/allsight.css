@@ -1,3 +1,5 @@
+
+
 header,
 footer {
 	background-color: #00BFFF;
@@ -14,13 +16,15 @@ body {
 
  article {
   border: 1px solid #bbb;
-	padding: 0 1rem;
 	background-color: #DCDCDC;
   margin: 1rem;
   
 
 }
+.info{
+margin:  0px;
 
+}
 .column5right, .column1right, .column2right, .column3right, .column4right{
     text-align: right;
     margin: 0px;
@@ -31,7 +35,14 @@ body {
         margin: 0px;
     
     }
-    
+    html{
+
+      background-color: lightblue;
+    }
+    main{
+
+      background-color: lightblue;
+    }
     
     header,
     nav,
@@ -87,6 +98,7 @@ body {
         right: -30px;
         position: relative;
         }
+
         h4{
 grid-column-start: 1;
 grid-column-end: 3;

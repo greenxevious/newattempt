@@ -7,7 +7,17 @@ div {
 
 }
 
-
+img.small {
+	display: none;
+				}
+			
+	img.med {
+	display: none;
+				}
+			
+	img.large {
+	display: block;
+				}S
 /*     700  */
 
 	.navigation {

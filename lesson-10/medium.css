@@ -1,6 +1,18 @@
 
 @media screen and (max-width: 820px) and (min-width: 446px) 
 {
+	img.small {
+display: none;
+	}
+
+	img.med {
+display: block;
+	}
+
+	img.large {
+display: none;
+	}
+
 	div {
     margin: 1px;
 	}
