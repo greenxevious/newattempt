@@ -14,6 +14,7 @@ display: none;
 	}
 
 	div {
+    margin: 1px;
 	}
 	section{
 		display: flex;

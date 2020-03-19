@@ -14,7 +14,9 @@
 			}
 		
 	div {
- 
+    display: grid;
+    grid-template-columns: 1fr;
+
   }
   .navigation {
 		display: flex;

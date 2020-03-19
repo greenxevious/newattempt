@@ -1,7 +1,9 @@
 @media (min-width: 821px)
 {
 div {
-  
+    display: grid;
+	margin: 1px;
+	grid-template-columns: 1fr 1fr 1fr;
 
 }
 

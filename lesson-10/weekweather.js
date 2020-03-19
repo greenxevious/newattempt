@@ -8,13 +8,18 @@ const weekURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&uni
     .then(function (weekcast) {
         console.log(weekcast); 
         var c = 1;
+        
     for (i = 0; i <= 40; i++) {
         if (weekcast.list[i].dt_txt.includes("18:00:00")) {
 
-            document.getElementById('day' + c).textContent = Math.round(weekcast.list[i].main.temp); 
+
+            document.getElementById('day' + c).textContent = Math.round(weekcast.list[i].main.temp) +'F'; 
 
             c=c+1;
         
+
+
+
         }
     }
     
