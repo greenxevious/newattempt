@@ -13,9 +13,9 @@
 		display: none;
 			}
 		
-	div {
- 
-  }
+article.forcastholder {
+				display: none;
+			}
   .navigation {
 		display: flex;
 		width: 100%;

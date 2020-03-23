@@ -13,14 +13,8 @@ display: block;
 display: none;
 	}
 
-	div {
-	}
-	section{
-		display: flex;
-		margin: 10px;
-		flex-direction: row;
-		padding: 10px;
-	}
+
+
 section:nth-child(even) {
 flex-direction: row-reverse;
 }
