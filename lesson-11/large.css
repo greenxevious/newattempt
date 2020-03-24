@@ -1,14 +1,21 @@
-@media only screen and (min-width: 821px) {
-
-		
-.cards {
-    display: grid;
-	margin: 1px;
-	grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 821px)
+{
+div {
+  
 
 }
 
-
+img.small {
+	display: none;
+				}
+			
+	img.med {
+	display: none;
+				}
+			
+	img.large {
+	display: block;
+				}S
 /*     700  */
 
 	.navigation {
@@ -27,5 +34,6 @@
 	.navigation li:first-child {
 		display: none;
 	}
-
+ 
 }
+

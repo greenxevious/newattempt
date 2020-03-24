@@ -17,7 +17,7 @@ b {
   }
 
 
-.topnav {
+.menu {
     overflow: hidden;
     background-color: blue;
     margin: 0;
@@ -25,7 +25,7 @@ b {
 
   }
   
-  .topnav a {
+  .menu a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -34,17 +34,17 @@ b {
     text-decoration: none;
   }
   
-  .topnav a:hover {
+  .menu a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  .topnav a.active {
+  .menu a.active {
     background-color: blue;
     color: white;
   }
   
-  .topnav .icon {
+  .menu .icon {
     display: none;
   }
 
@@ -58,21 +58,21 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
       float: right;
       display: block;
     }
   }
   
   @media screen and (max-width: 700px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .topnav.responsive a {
+    .menu.responsive a {
       float: none;
       display: block;
       text-align: left;
