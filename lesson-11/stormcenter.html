@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title> Portal | Storm Center Page</title>
+    <meta name="viewport" content="width=500, initial-scale=1">
+<meta name ="description" content ="Weather page assignment. Xevious Green">
+
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="tablet.css">
+<link rel="stylesheet" type="text/css" href="phone.css">
+<link rel="stylesheet" type="text/css" href="stormcenter.css">
+
+
+ </head>
+
+<header>
+  <b>Youweather.org
+</b>
+</header>
+<nav>
+	<ul>
+		<li><a href="weatherpage.html"> Home</a></li>
+		<li><a href="Preston.html">Preston</a></li>
+		<li><a href="sodasprings.html">Soda Springs</a></li>
+		<li><a href="FishHaven.html">Fish Haven</a></li>
+		<li><a href="stormcenter.html">Storm Center</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+
+<main>
+
+	<fieldset>
+
+	<form>
+		<label for= "firstname">First Name</label> <br>
+		<input type="text" id="firstname" name="firstname" required><br>
+		<label for= "lastname">Last Name</label><br>  
+		<input type="text" id="lastname" name="lastname" required>
+	  </form>
+	  
+	  <form>
+		<br>
+		<label for= "email" >Email</label><br>  
+		<input type="email" id="email" placeholder= "user@email.org">
+	  </form>	
+
+	  <form>
+		<br>
+		<label for= "phone" >Phone Number</label><br>  
+		<input type="tel" id="phone" placeholder="###-###-####" required>
+	  </form>
+
+	  <form>
+		<br>
+		<label for= "zipcode" >Zip Code</label><br>  
+		<input type="number" id="zipcode" required>
+	  </form>
+	</fieldset>
+	  <br>
+
+	  <fieldset>
+
+		<form>
+			<br>
+			<label for ="list">Storm Type: </label>
+			<select id="list" name="Stormtype">
+				<option>Flash Flood</option>
+				<option>Hail</option>
+				<option>Hurricane</option>
+				<option>Thunderstorm</option>
+				<option>Tornado</option>
+			</select>
+			<br>  
+		  </form>
+	  </fieldset>
+	  
+		<br>
+		<fieldset>
+			<script src="stormcenter.js"></script>
+
+			<label for="rating">Storm Severity:</label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				<span id="ratingvalue">5</span>
+			</fieldset>
+
+			<datalist id="tickmarks">
+				<option value="0">
+				<option value="1">
+				<option value="2">
+				<option value="3">
+				<option value="4">
+				<option value="5">
+				<option value="6">
+				<option value="7">
+				<option value="8">
+				<option value="9">
+				<option value="10">
+				</datalist>
+
+
+
+	<br>
+
+	<fieldset>
+	<form>
+		<br>
+		<label for = "region"> Storm Region: </label>
+		<select id= "region" name= "region">
+			<option selected disabled>Select Region</option>
+			<option> Preston</option>
+			<option> Soda Springs</option>
+			<option> Fish Haven</option>
+			<option> Tornado</option>
+		</select>
+		<br>  
+	  </form>
+
+	</fieldset>
+<br>
+<fieldset>
+<form>
+	<label>User In-Danger Level: </label><br><br>
+	<input type="radio" id="yes" name="confirm" value="yes">
+	<label for="yes">Yes</label><br>
+	<input type="radio" id="Maybe" name="confirm" value="Maybe">
+	<label for="Maybe">Maybe</label><br>
+	<input type="radio" id="No" name="confirm" value="No">
+	<label for="No">No</label><br>
+</form>
+</fieldset>
+<br>
+
+<label for="Information">Additional Information or Comments</label><br>
+<textarea id="Information" rows="8" cols="40" placeholder="Information"></textarea>
+
+
+
+<br><br>
+<input type="button" onclick="thanks.html" value="Submit">
+<br>
+<br>
+</main>
+<footer>
+    &copy; 2020 | Author: Xevious E. Green |  Cell# 801-502-4589 |<a href="">Terms </a>
+</footer>
+
+</html>
