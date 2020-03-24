@@ -63,11 +63,13 @@ overflow: auto;
 .infomationsec{
   float: right;
   padding: 4px;
-bottom: 40px;
+top: 40px;
+
 }
 .articlepic{
 float: right;
 padding: 10px;
+bottom: 400px;
 }
 
 .column5right, .column1right, .column2right, .column3right, .column4right{
@@ -90,7 +92,10 @@ padding: 10px;
 margin: 0px;
       background-color: lightblue;
     }
-    
+    .story{
+
+      height: auto ;
+    }
    
     b {
       font-size: 22px;
