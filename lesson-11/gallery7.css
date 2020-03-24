@@ -7,35 +7,35 @@ main{
     background-color: #d5aaff;
 }
 
-.small{
+.smallg{
     display: flex;
     flex-direction: column;
 
 }
 
-.small > img{
+.smallg > img{
 margin: 20px;
 width: 300px;
 
 
 }
-.med{
+.medg{
     display: flex;
     flex-direction: column;
 
 }
-.med > img{
+.medg > img{
     margin: 10px;
     width: 500px;
 
     
     }
-    .large{
+    .largeg{
         display: flex;
         flex-direction: column;
     
     }
-    .large > img{
+    .largeg > img{
         margin: 10px;
         width: 800px;
         

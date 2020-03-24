@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=500, initial-scale=1">
 <meta name ="description" content ="Weather page assignment. Xevious Green">
 
-<link rel="stylesheet" type="text/css" href="desktop.css">
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/css" href="tablet.css">
-<link rel="stylesheet" type="text/css" href="phone.css">
-<link rel="stylesheet" type="text/css" href="stormcenter.css">
 
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/javascript" href="prestonweatherpage.js">
+<link rel="stylesheet" type="text/css" href="allsight.css">
+<link rel="stylesheet" type="text/css" href="small.css">
+<link rel="stylesheet" type="text/css" href="large.css">
+<link rel="stylesheet" type="text/css" href="medium.css">
+<link rel="stylesheet" type="text/javascript" href="responsive.js">
+<link rel="stylesheet" type="date/time" href="exjavascript.js">
 
  </head>
 
@@ -19,21 +22,24 @@
   <b>Youweather.org
 </b>
 </header>
-<nav>
-	<ul>
-		<li><a href="weatherpage.html"> Home</a></li>
-		<li><a href="Preston.html">Preston</a></li>
-		<li><a href="sodasprings.html">Soda Springs</a></li>
-		<li><a href="FishHaven.html">Fish Haven</a></li>
-		<li><a href="stormcenter.html">Storm Center</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-	</ul>
+<script src="responsive.js"></script>
+
+<nav class="menu" id="mymenu">
+	<a href="index.html" class="active">Home</a>
+	<a href= "Preston-10.html">Preston</a>
+	<a href= "sodasprings.html">Soda Springs</a>
+	<a href= "FishHaven.html">Fish Haven</a>
+	<a href= "stormcenter.html">Storm Center</a>
+	<a href= "gallery.html">Gallery</a>
+
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+	</a>
 </nav>
 
 <main>
 
 	<fieldset>
-
+<form action="#" target="#" method="POST">
 	<form>
 		<label for= "firstname">First Name</label> <br>
 		<input type="text" id="firstname" name="firstname" required><br>
@@ -82,11 +88,11 @@
 			<script src="stormcenter.js"></script>
 
 			<label for="rating">Storm Severity:</label>
-		<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" list="marks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 				<span id="ratingvalue">5</span>
 			</fieldset>
 
-			<datalist id="tickmarks">
+			<datalist id="marks">
 				<option value="0">
 				<option value="1">
 				<option value="2">
@@ -113,7 +119,6 @@
 			<option> Preston</option>
 			<option> Soda Springs</option>
 			<option> Fish Haven</option>
-			<option> Tornado</option>
 		</select>
 		<br>  
 	  </form>
@@ -139,12 +144,16 @@
 
 
 <br><br>
-<input type="button" onclick="thanks.html" value="Submit">
+
+<input type="submit" value="Submit">
+</form>
 <br>
 <br>
 </main>
 <footer>
-    &copy; 2020 | Author: Xevious E. Green |  Cell# 801-502-4589 |<a href="">Terms </a>
+	&copy; 2020 | Author: Xevious E. Green |  Cell# 801-502-4589 |<a href="">Terms </a>
+	<script>document.write("This page was updated last on " + document.lastModified +".");</script>
+
 </footer>
 
 </html>
