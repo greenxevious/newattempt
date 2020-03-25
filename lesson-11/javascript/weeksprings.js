@@ -8,7 +8,9 @@ const urly = "http://api.openweathermap.org/data/2.5/forecast?zip=83276,us&units
         }
         else{return Promise.reject({
             status: response.status,
-            statusText: response.statusText}
+            statusText: response.statusText
+    })
+}
     })
     .then(function (weekcast) {
         console.log(weekcast); 
