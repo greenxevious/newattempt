@@ -1,7 +1,8 @@
 const urly = "http://api.openweathermap.org/data/2.5/forecast?zip=83276,us&units=imperial&appid=b18f5f2b88213ae0f68cfac85c4f48da";
  
 
-    fetch(urly)
+const newLocal = fetch(urly);
+    newLocal
     .then(response => { 
         if(response.ok){
       return response.json();
