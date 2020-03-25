@@ -1,11 +1,11 @@
-const urls = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=45275c11d5907ee4f0f87a61e10967f0'
+const urls = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=45275c11d5907ee4f0f87a61e10967f0';
  
 
     fetch(urls)
-    .then(function (response) {
+    .then(function(response) {
       return response.json();
     })
-    .then(function (weekcast) {
+    .then(function(weekcast) {
         console.log(weekcast); 
         var c = 1;
         

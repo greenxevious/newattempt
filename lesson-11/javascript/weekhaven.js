@@ -2,10 +2,10 @@ const weekURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=83287,us&un
  
 
     fetch(weekURL)
-    .then(function (response) {
+    .then(function(response) {
       return response.json();
     })
-    .then(function (weekcast) {
+    .then(function(weekcast) {
         console.log(weekcast); 
         var c = 1;
         

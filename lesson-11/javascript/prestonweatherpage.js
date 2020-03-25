@@ -2,10 +2,10 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units
  
 
     fetch(apiURL)
-    .then(function (response) {
+    .then(function(response) {
       return response.json();
     })
-    .then(function (jsonObject) {
+    .then(function(jsonObject) {
       console.table(jsonObject);
 
 
