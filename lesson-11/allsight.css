@@ -53,10 +53,7 @@ img.small, img.med, img.large{
   margin: 1rem;
   line-height: 30px;
 }
-fieldset{
 
- background-color:  rgb(145, 143, 248);
-}
  article.inner{
   position: absolute;
   grid-template-columns:  auto auto;
@@ -104,6 +101,10 @@ bottom: 400px;
 margin: 0px;
       background-color: rgb(156, 155, 240);
     }
+    fieldset{
+
+      background-color:  rgb(145, 143, 248);
+     }
     .story{
 
       height: auto ;
