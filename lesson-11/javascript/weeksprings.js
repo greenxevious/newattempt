@@ -2,8 +2,13 @@ const urly = "http://api.openweathermap.org/data/2.5/forecast?zip=83276,us&units
  
 
     fetch(urly)
-    .then(function (response) {
+    .then(response => { 
+        if(response.ok){
       return response.json();
+        }
+        else{return Promise.reject({
+            status: response.status,
+            statusText: response.statusText}
     })
     .then(function (weekcast) {
         console.log(weekcast); 
