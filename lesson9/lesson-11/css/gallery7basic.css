@@ -1,0 +1,113 @@
+header,
+footer {
+	background-color: #00BFFF;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+  padding: 10px;
+}
+body {
+	background-color: AliceBlue;
+	font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ article {
+  border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #DCDCDC;
+  margin: 1rem;
+  
+
+}
+#sumpic {
+display: block;
+max-width: 100%;
+  padding-top: 10px;
+padding-bottom: 10px;
+
+  }
+article.inner{
+width: 10%;
+height: 75px;
+float:left;
+top: 200px;
+right: 1000px;
+position: absolute;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+
+header,
+nav,
+main,
+footer {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+nav {
+	max-width: 900px;
+	background-color: blue;
+}
+.navigation {
+	margin: 0 ;
+	list-style: none;
+	padding: 0;
+	background-color: blue;
+	text-align: center;
+	box-shadow: 0 5px 15px #00BFFF;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #fff;
+	
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* needed because of state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: yellow;
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+  article.inner{
+    font-size:13px;
+    
+  }
+  article.forecast {
+    display: none;
+   
+    
+  }
+}
