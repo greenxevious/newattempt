@@ -1,4 +1,4 @@
-const weekURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=83287,us&units=imperial&appid=1160757af450dc480e5227d8979f8d4a';
+const weekURL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?zip=83287,us&units=imperial&appid=1160757af450dc480e5227d8979f8d4a';
  
 
     fetch(weekURL)

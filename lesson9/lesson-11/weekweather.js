@@ -1,4 +1,4 @@
-const urls = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=45275c11d5907ee4f0f87a61e10967f0';
+const urls = 'https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=45275c11d5907ee4f0f87a61e10967f0';
  
 
     fetch(urls)
