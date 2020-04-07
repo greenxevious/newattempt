@@ -8,7 +8,7 @@ const requestURL = "https://cors-anywhere.herokuapp.com/https://dominicanderson1
     console.table(jsonObject);  // temporary checking for valid response and data parsing
       
     const file = jsonObject['file'];
-    for (let i = 0; i < file.length; i++ ) {
+    for (let i = 0; i <= file.length; i++ ) {
 
       let mypeople = document.createElement('section');
 
@@ -17,15 +17,19 @@ const requestURL = "https://cors-anywhere.herokuapp.com/https://dominicanderson1
            mypeople.appendChild(h2);
 
           
-           let birth = document.createElement('p');
-           birth.textContent = 'Years of Experieance: ' + file[i].years;
-           mypeople.appendChild(birth);
+           let exp = document.createElement('p');
+           exp.textContent = 'Years of Experieance: ' + file[i].years;
+           mypeople.appendChild(exp);
 
    
-           let birthPlace = document.createElement('p');
-           birthPlace.textContent = "Company Email: " + file[i].email;
-           mypeople.appendChild(birthPlace);
+           let compemail = document.createElement('p');
+           compemail.textContent = "Company Email: " + file[i].email;
+           mypeople.appendChild(compemail);
 
+
+           let bio = document.createElement('p');
+           bio.textContent = "Hello All: "+ file[i].bio;
+           mypeople.appendChild(bio);
           
 
            let image = document.createElement('img');
