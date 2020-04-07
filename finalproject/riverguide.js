@@ -1,4 +1,4 @@
-const requestURL = "https://cors-anywhere.herokuapp.com/https://dominicanderson1185.github.io/newattempt/extrafiles/json.html";
+const requestURL = "https://dominicanderson1185.github.io/newattempt/extrafiles/people.json";
  
   fetch(requestURL)
   .then(function (response) {
@@ -10,11 +10,11 @@ const requestURL = "https://cors-anywhere.herokuapp.com/https://dominicanderson1
     const file = jsonObject['file'];
     for (let i = 0; i <= file.length; i++ ) {
 
-      let mypeople = document.createElement('section');
+      let mypeople = document.createElement('article');
 
-           let h2 = document.createElement('h2');
-           h2.textContent = file[i].name + ' ' + file[i].lastname;
-           mypeople.appendChild(h2);
+           let title = document.createElement('h1');
+           title.textContent = file[i].name + ' ' + file[i].lastname;
+           mypeople.appendChild(title);
 
           
            let exp = document.createElement('p');
