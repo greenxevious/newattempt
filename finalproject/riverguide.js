@@ -21,6 +21,9 @@ const requestURL = "https://cors-anywhere.herokuapp.com/https://dominicanderson1
            exp.textContent = 'Years of Experieance: ' + file[i].years;
            mypeople.appendChild(exp);
 
+           let cert = document.createElement('p');
+           cert.textContent = "My Certifications: " + file[i].cert;
+           mypeople.appendChild(cert);
    
            let compemail = document.createElement('p');
            compemail.textContent = "Company Email: " + file[i].email;
