@@ -7,19 +7,28 @@
 <meta name ="description" content ="lesson 10 Preston Weather API site home page. Xevious Green 3/13">
 
 <link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/javascript" href="prestonweatherpage.js">
-<link rel="stylesheet" type="text/css" href="allsight.css">
+<link rel="stylesheet" type="text/javascript" href="riverguide.js">
+<link rel="stylesheet" type="text/css" href="normal.css">
 <link rel="stylesheet" type="text/css" href="small.css">
 <link rel="stylesheet" type="text/css" href="large.css">
 <link rel="stylesheet" type="text/css" href="medium.css">
 <link rel="stylesheet" type="text/javascript" href="responsive.js">
-<link rel="stylesheet" type="date/time" href="exjavascript.js">
+<link rel="stylesheet" type="text/css" href="wideview.css">
  </head>
 
 <header>
-  <b>Youweather.org
+  <b>Salmon River Adventure
+
 </b>
 </header>
+
+<!--A reservation page that contains a data table summarizing 
+  the three adventures with length, skill level,
+   and cost information and 
+   a registration form that requests the customer's full name, email, phone, 
+   adventure selection, start date selection, and a question/comment text area. 
+   (This form does not need to process the input.) -->
+
         <script src="responsive.js"></script>
 
 
@@ -34,107 +43,143 @@
           </a>
       </nav>
   
-    
-<main>
-          <h1 class= "title">Your Local Fish Haven Weather</h1>
+ 
 
-<article>
-
-  <img class= "small" src= "haven3.jpg" alt="youweatherpreston"  width="300">    
-            
-  <img class= "med" src= "Haven2.jpg" alt="youweatherpreston" width="600">  
+  <main class="grid">
+    <article class="beg">
+      
+      <img src="images/salmontripbegenner.jpg" width="100%">
+ <p>Beginner</p>
+    </article>
+  <article class="int">
+    <img src="images/salmontripinter.jpg" width="100%">
+  <p>Intermediate</p>
+  </article>
   
-  <img class= "large" src= "Haven1.jpg" alt="youweatherpreston" width="900">  
+  <article class="exp">
+    <img src="images/salmontripeexperienced.jpg" width="100%">
+<p>Experience</p>
+  </article>
+  <br>
+ 
+</main>
 
-     
-            <script src="currenthaven.js"></script>
-
-            <article class="inner">
-             <h4>Weather summary</h4> 
-             <div class ="column5left"> Currently:</div>
-             <div class ="column5right"><span id="curtemp"></span> F</div>
-             <div class ="column1left"> Temperature:</div>
-             <div class ="column1right"><span id="tempe"></span> F</div>
-             <div class ="column2left"> Wind Chill:</div>
-             <div class ="column2right"><span id="windChill"></span> F </div>
-             <div class ="column3left"> Humidity: </div>
-              <div class ="column3right"><span id="humid"></span> %</div>
-              <div class ="column4left">Wind Speed: </div>
-              <div class ="column4right"><span id= "windSpeed"></span> MPH</div>
-              </article> 
-         
-</article>
-          <br>
-          <article class ="forcastholder">
-            <script src="weekhaven.js"></script>
-
-            <h3 class="Forcasttitle">5 Day Forecast</h3>
-
-              <div class="week">SAT<br><br>
-                <img src="#" id="days1" alt="">
+          <body>
+            <br>
+            <table>
+   
+              <thead>
+                <tr><th colspan="4">Trip Breakdown</th></tr>
+                <tr>
+                  <td class="change">Skill Level</td>
+                <td class="change">Beginner</td>
+                <td class="change">Intermediate</td>
+                <td class="change">Expert</td>
+              </tr>
+               </thead>
+                   
+                 <tbody>
+              
+              <tr>
+                <td>Cost</td>
+                <td>$30 per person</td>
+                <td>$60 per person</td>
+                <td>$90 per person</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>45 mins *</td>
+                <td>1:30 hrs *</td>
+                <td>2 hrs *</td>
+              </tr>
+              
+                 </tbody>
+                 <!--A reservation page that contains a data table summarizing 
+                the three adventures with length, skill level,
+                 and cost information and 
+                 a registration form that requests the customer's full name, email, phone, 
+                 adventure selection, start date selection, and a question/comment text area. 
+                 (This form does not need to process the input.) -->
+                <tfoot>
+                <tr>
+                <td colspan= "4">* Time MY Very</td>
+                </tr>
+                <tr>
+                  <td colspan= "4">Cost includes everything needed for a great ride!</td>
+              
+                </tr>
+                 </tfoot>
+              
+              
+               </table>
                <br>
-
-                 <span id= "day1"></span><br><br>
-              </div>
-      
-                 <div class="week">SUN<br><br>
-                  <img src="#" id="days2" alt="">
+<h1 class="title">Registration</h1>
+               <br>
+            <fieldset>
+              <form action="#" target="#" method="POST">
+              
+                  <label for= "firstname">First Name</label> <br>
+                  <input type="text" id="firstname" name="firstname" required><br>
+                  <label for= "lastname">Last Name</label><br>  
+                  <input type="text" id="lastname" name="lastname" required>
+                  </form>
+                  
+                  <form>
                   <br>
-
-                  <span id= "day2"></span><br><br>
-                 </div>
-      
-              <div class="week">Mon<br><br>
-                <img src="#" id="days3" alt="">
-                <br>
-                <span id= "day3"></span><br><br>
-      
-                </div> 
-                <div class="week"> TUE<br><br>
-                  <img src="#" id="days4" alt="">
+                  <label for= "email" >Email</label><br>  
+                  <input type="email" placeholder= "user@email.com" required>
+                  </form>	
+              
+                  <form>
                   <br>
-
-                  <span id= "day4"></span><br><br>
-      
-                </div>
-                 <div class="week">WED<br><br>
-                  <img src="#" id="days5" alt="">
+                  <label for= "phone" >Phone Number</label><br>  
+                  <input type="tel"  placeholder="###-###-####" required>
+                  </form>
+              <br>
+              
+                  <label for ="list">Adventure Selection </label><br>
+                  <select id="list" name="Adventuretime">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Expert</option>
+                  </select>
                   <br>
+                  <br>        
+                  <label for="Date">Start Date</label><br>
+              <input type="date" name="Date" required>
+           <br>       <br>        
+                  <label for="Additionalquestions">Additional Information </label><br>
+              <textarea id="Additionalquestions" rows="8" cols="40" placeholder="Additional questions or comments"></textarea>
+              
+              
+              
+              <br><br>
+              
+              <input type="submit" value="Submit">
 
-                  <span id= "day5"></span><br><br>
-      
-                 </div>
-      
-        </article>
+                </fieldset>
+     
+               
+              <!--A reservation page that contains a data table summarizing 
+            the three adventures with length, skill level,
+             and cost information and 
+             a registration form that requests the customer's full name, email, phone, 
+             adventure selection, start date selection, and a question/comment text area. 
+             (This form does not need to process the input.) -->
+          
+              
+          
+              
+        
+              <br>
+          
+              <br>
+              
+              
 
-        <br>
-        <script src = "eventhaven.js"></script>
-        <div class= "cards"></div>
-        <br> 
-        <article class="story">
-         <h1>Article</h1>
-         <img class ="articlepic" src= "Haven4.jpg" alt="youweatherpreston">  
-
-         <p>
-          Cailloux tu branches quarante xv. Babil te rirez je on mille rendu. Militaire atteindra fabriques rit crepitent non cravaches. Regiments oh sacrifice annoncait un. Maison poemes glisse uns bourse troupe offrir lui. Dela crie feu mur pied hors nuit quel par. Nid trotte iii claire sortir ras ahuris pleine. Dites roche fille des cents eux gifle lunes nul. Capotes peu grosses par oui pinacle fureurs animaux. Par garnison rit reparler bravoure des cervelle ennemies campagne. 
-
-          Bout seul et cite cinq gens ou nuit. Elle paix tire donc peu uns sait les. De ou parterre vaudrait adjudant. Battirent dentelles bas nez indicible parlaient. Car trafics erigent fer heureux eux piquees geantes. Imberbes piquette les negation ont revendre. Et sa miserables tricolores convulsion remarquent prisonnier eclatantes. Troupe plates oui trouva rit fievre ils visite dur. Depenser age repondit essaiera ifs epandent habitent regardez. 
-         </p>
-          </article>
-          <br>	
-        <article class ="info">
-          <h2>Contact Information</h2>
-      <p>655 N 8th E, Preston, ID 83263</p>
-      <p>(208)845-4535</p>
-      <img class= "infomationsec" src= "Havenmap.jpg"  alt="youweatherpreston">    
-
-      <p>Youweather.org/Preston</p>
-          </article>
-
-          </main>
+          </body>
 <footer>
-    &copy; 2020 | Author: Xevious E. Green |  Cell# 801-502-4589 |<a href="#">Terms </a>
-  <script>document.write("This page was updated last on " + document.lastModified +".");</script>
+    &copy; 2020 | Author: Xevious E. Green 
   </footer>
 
 </html>

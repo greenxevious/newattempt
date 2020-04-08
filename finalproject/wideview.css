@@ -1,0 +1,16 @@
+@media (min-width: 1211px)
+{
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 35px;}
+    
+		
+		.gridless{
+			display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-size: 35px;}
+    main{
+        background-color: blueviolet;
+    }
+}

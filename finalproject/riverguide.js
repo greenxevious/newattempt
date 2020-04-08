@@ -8,9 +8,11 @@ const requestURL = "https://dominicanderson1185.github.io/newattempt/extrafiles/
     console.table(jsonObject);  // temporary checking for valid response and data parsing
       
     const file = jsonObject['file'];
-    for (let i = 0; i <= file.length; i++ ) {
+    for (let i = 0; i < file.length; i++ ) {
 
-      let mypeople = document.createElement('article');
+      let mypeople = document.createElement('section');
+      mypeople.setAttribute('class','sec');
+
 
            let title = document.createElement('h1');
            title.textContent = file[i].name + ' ' + file[i].lastname;
@@ -37,6 +39,7 @@ const requestURL = "https://dominicanderson1185.github.io/newattempt/extrafiles/
 
            let image = document.createElement('img');
            image.setAttribute('src', file[i].picture);
+           image.setAttribute('class', 'people')
            mypeople.appendChild(image);
 
    

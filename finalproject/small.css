@@ -1,37 +1,14 @@
 
 @media only screen and (max-width: 445px) {
 
-	img.small {
-		display: block;
-			}
+    .grid{
+        display: grid;
+		grid-template-columns: 1fr ;}
 		
-			img.med {
-		display: none;
-			}
-		
-			img.large {
-		display: none;
-			}
-		
-article.forcastholder {
-				display: none;
-			}
-  .navigation {
-		display: flex;
-		width: 100%;
-	}
-	.navigation li {
-		display: block; 
-		flex: 1 1 100%;
-	}
-	.navigation li a {
-		color: yellow;
-		text-align: center;
-	}
-	
-	.navigation li:first-child {
-		display: none;
-	}
-  
-
+		.gridless{
+			display: grid;
+			grid-template-columns: 1fr;}
+			.meet{
+				display: grid;
+				grid-template-columns: 1fr;}
 }

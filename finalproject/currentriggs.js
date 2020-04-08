@@ -14,9 +14,7 @@ const riggins = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.o
     document.getElementById('maxtempe').textContent = Math.round(jsonObject.main.temp_max);
     document.getElementById('humid').textContent = Math.round(jsonObject.main.humidity);
     document.getElementById('windSp').textContent = Math.round(jsonObject.wind.speed);
-    document.getElementById('icon').setAttribute('src', imagesrc);
 
-    var imagesrc = 'https://openweathermap.org/img/wn/' + jsonObject.weather[0].icon + '@2x.png';
 
  
   
@@ -36,7 +34,7 @@ if (t > 50 || s < 0) {
 else {
     windChill = ((35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16))*10)/10;
     windChill = Math.round(windChill);
-    document.getElementById('Chill').innerHTML = windChill;
+    document.getElementById('Chill').innerHTML = windChill + "F";
 }
 
 
