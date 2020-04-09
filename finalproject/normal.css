@@ -89,7 +89,11 @@ font-size: 20px;
     .icon {
         display: none;
       }
+main{
+  font-family: 'Crimson Text', serif;
 
+
+}
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -100,6 +104,7 @@ height: 600px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       font-size: 20px;
+
     }
   textarea{
 
