@@ -89,6 +89,7 @@ font-size: 20px;
     .icon {
         display: none;
       }
+
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -109,11 +110,11 @@ background-color: #00BFFF;
 
 }
 .frontpage,.meet{
+  text-align: center;
     grid-template-columns:  auto auto auto auto;
     display: grid;
     font-size: 20px;
 
-   width: auto;
 
 }
 
