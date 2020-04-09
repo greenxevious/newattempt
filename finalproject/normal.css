@@ -25,15 +25,15 @@ border-collapse: collapse;
 background-color:#3799a8 ;
 }
 .beg{
-  height: 210px;
+  height: 300px;
 }.int{
-  height: 230px;
+  height: 300px;
 }
 .services{
   font-size: 20px;
 }
 .exp{
-height: 370px;
+height: 440px;
 
 }
 footer{
@@ -108,6 +108,15 @@ height: 600px;
 .guide{
 background-color: #00BFFF;
 
+}
+iframe{
+  width: 600px;
+   height: 450;
+    frameborder: 0;
+     border: 0;
+     aria-hidden:false;
+     tabin 
+     tabindex: 0;
 }
 .frontpage,.meet{
   text-align: center;
